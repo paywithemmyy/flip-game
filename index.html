@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emmy Flip Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="flip.css">
+  <link rel="shortcut icon" href="coinflip.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="card">
+  <h1>Emmy<span>Flip</span> Game</h1>
+  <p class="subtitle">🪙 Call it in the air!</p>
+
+  <div class="coin-wrap">
+    <div class="coin" id="coin">
+      <div class="coin-face coin-heads">😄</div>
+      <div class="coin-face coin-tails">🌀</div>
+    </div>
+  </div>
+
+  <div class="scoreboard">
+    <div class="score-box wins">
+      <div class="score-label">Wins</div>
+      <div class="score-num js-wins">0</div>
+    </div>
+    <div class="score-box losses">
+      <div class="score-label">Losses</div>
+      <div class="score-num js-losses">0</div>
+    </div>
+  </div>
+
+  <div class="result-msg" id="result">Pick heads or tails!</div>
+
+  <div class="btn-row">
+    <button class="btn btn-heads" onclick="playGame('heads')">Heads 😄</button>
+    <button class="btn btn-tails" onclick="playGame('tails')">Tails 🌀</button>
+  </div>
+  <button class="btn-clear" onclick="clearScores()">Clear Scores</button>
+</div>
+
+<script src="flip.js"></script>
+</body>
+</html>
