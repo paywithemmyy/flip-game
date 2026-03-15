@@ -13,6 +13,10 @@
 <div class="card">
   <h1>Emmy<span>Flipcoin</span> Game</h1>
   <p class="subtitle">🪙 Call it in the air!</p>
+  <div class="current-player-label">Player 1's Turn</div>
+<div class="player-tabs">
+  <button class="player-tab active" onclick="switchPlayer()">Switch Player</button>
+</div>
 
   <div class="coin-wrap">
     <div class="coin" id="coin">
@@ -42,5 +46,8 @@
 </div>
 
 <script src="flip.js"></script>
+<div id="monster-overlay">
+  <div class="monster-content"></div>
+</div>
 </body>
 </html>
